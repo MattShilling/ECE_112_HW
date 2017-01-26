@@ -1,7 +1,7 @@
 # . . . . . . . . . . . . . . . .
 #
-#   CREATED BY MATT SHILLING
 #   ECE 112 Homework Helper
+#   CREATED BY MATT SHILLING
 #
 # . . . . . . . . . . . . . . . .
 
