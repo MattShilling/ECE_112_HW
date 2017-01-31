@@ -49,25 +49,25 @@ def answer(p_set, p_num):
     if(choice=='1'):
         if(p_set == '1'):
                 url = a_ccv
-                url += str(p_num)
+                url += str(cv_prob[p_num])
                 url += ".pdf"
                 webbrowser.open(url)
 
         if(p_set == '2'):
                 url = a_rn
-                url += str(p_num)
+                url += str(rn_prob[p_num])
                 url += ".pdf"
                 webbrowser.open(url)
 
         if(p_set == '3'):
                 url = a_sol
-                url += str(p_num)
+                url += str(sol_prob[p_num])
                 url += ".pdf"
                 webbrowser.open(url)
 
         if(p_set == '4'):
                 url = a_kvl
-                url += str(p_num)
+                url += str(kvl_prob[p_num])
                 url += ".pdf"
                 webbrowser.open(url)
         print("")
