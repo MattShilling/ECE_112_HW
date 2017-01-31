@@ -91,7 +91,7 @@ while(choice != '5'):
 
     if(choice == '1'):
         print("Opening Random Charge & Voltage Problem...")
-        sel = random.randint(1, len(cv_prob))
+        sel = random.randint(0, len(cv_prob)-1)
         print("")
         url = p_ccv
         url += str(cv_prob[sel])
@@ -101,7 +101,7 @@ while(choice != '5'):
 
     if(choice == '2'):
         print("Opening Random Resistor Network Problem...")
-        sel = random.randint(1, len(rn_prob))
+        sel = random.randint(0, len(rn_prob)-1)
         print("")
         url = p_rn
         url += str(rn_prob[sel])
@@ -111,7 +111,7 @@ while(choice != '5'):
 
     if(choice == '3'):
         print("Opening Random Sources and Ohm's Law Problem...")
-        sel = random.randint(1, len(sol_prob))
+        sel = random.randint(0, len(sol_prob)-1)
         print("")
         url = p_sol
         url += str(sol_prob[sel])
@@ -121,7 +121,7 @@ while(choice != '5'):
 
     if(choice == '4'):
         print("Opening Random KVL Problem...")
-        sel = random.randint(1, len(kvl_prob))
+        sel = random.randint(0, len(kvl_prob)-1)
         print("")
         url = p_kvl
         url += str(kvl_prob[sel])
