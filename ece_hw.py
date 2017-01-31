@@ -1,7 +1,7 @@
 # . . . . . . . . . . . . . . . .
 #
-#   ECE 112 Homework Helper
 #   CREATED BY MATT SHILLING
+#   ECE 112 Homework Helper
 #
 # . . . . . . . . . . . . . . . .
 
@@ -12,10 +12,10 @@ import random
 #
 # numbered problem sets
 #
-cv_prob = {1,2,3,4,5,6,7,7,18,19,21,22,25,26,27,28,34}
-rn_prob = {1,2,4,5,8,9,10,14}
-sol_prob = {1,2,3,10,11,13,14,15,16,17,25,26,28}
-kvl_prob = {1,3,4,6,7,8,9,15,20}
+cv_prob = [1,2,3,4,5,6,7,7,18,19,21,22,25,26,27,28,34]
+rn_prob = [1,2,4,5,8,9,10,14]
+sol_prob = [1,2,3,10,11,13,14,15,16,17,25,26,28]
+kvl_prob = [1,3,4,7,8,9,11,13,15,17,18,20,22]
 
 #
 # hw prob url
@@ -94,7 +94,7 @@ while(choice != '5'):
         sel = random.randint(1, len(cv_prob))
         print("")
         url = p_ccv
-        url += str(sel)
+        url += str(cv_prob[sel])
         url += ".txt"
         webbrowser.open(url)
         answer(choice, sel)
@@ -104,7 +104,7 @@ while(choice != '5'):
         sel = random.randint(1, len(rn_prob))
         print("")
         url = p_rn
-        url += str(sel)
+        url += str(rn_prob[sel])
         url += ".pdf"
         webbrowser.open(url)
         answer(choice, sel)
@@ -114,7 +114,7 @@ while(choice != '5'):
         sel = random.randint(1, len(sol_prob))
         print("")
         url = p_sol
-        url += str(sel)
+        url += str(sol_prob[sel])
         url += ".pdf"
         webbrowser.open(url)
         answer(choice, sel)
@@ -124,9 +124,10 @@ while(choice != '5'):
         sel = random.randint(1, len(kvl_prob))
         print("")
         url = p_kvl
-        url += str(sel)
+        url += str(kvl_prob[sel])
         url += ".pdf"
         webbrowser.open(url)
         answer(choice, sel)
 
 print("Have a good day!")
+
